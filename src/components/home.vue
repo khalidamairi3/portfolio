@@ -17,11 +17,14 @@
         </div>
         <projectsPage/>
         <skillSet />
+        <qouteSection />
         <contacPage />
+        
     </div>
 </template>
 
 <script>
+import qouteSection from "./qoute"
 import contacPage from "./contact";
 import skillSet from "./skillSet";
 import projectsPage from "./projects"; 
@@ -30,7 +33,8 @@ import projectsPage from "./projects";
         components: {
             projectsPage,
             skillSet,
-            contacPage
+            contacPage,
+            qouteSection
         },
        
     }

@@ -59,7 +59,8 @@ import projectItem from "./project";
 <style scoped>
 
 #projects{   
-    margin-top: 5vh;
+
+    padding-top: 5vh;
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
     justify-items: center;
