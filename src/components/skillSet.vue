@@ -76,6 +76,8 @@
     z-index: 5;
     grid-template-columns: minmax(300px,1fr);
     row-gap: 5vh;
+    padding-bottom: 10vh;
+
 }
 
 #skillset-header {
@@ -101,6 +103,7 @@
     justify-items: center;
     row-gap: 5vh;
     column-gap: 2vw;
+    
 }
 .skill-header img {
 

@@ -17,17 +17,20 @@
         </div>
         <projectsPage/>
         <skillSet />
+        <contacPage />
     </div>
 </template>
 
 <script>
-import skillSet from "./skillSet"
-import projectsPage from "./projects" 
+import contacPage from "./contact";
+import skillSet from "./skillSet";
+import projectsPage from "./projects"; 
     export default {
         name: "home-page",
         components: {
             projectsPage,
-            skillSet
+            skillSet,
+            contacPage
         },
        
     }
