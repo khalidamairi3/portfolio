@@ -2,27 +2,59 @@
     <div id="qoute">
         <h1 id="qoute-header"> Get a Qoute </h1>
         <label for="name"> Name: </label>
-        <input type="text" name="name">
+        <input type="text" name="name" v-model="name">
         <label for="email"> Email:</label>
         <input name="email" type="text" v-model="email">
-        <label for="description"> Description: </label>
+        <label for="description"> Message: </label>
         <textarea name="description" id="text" v-model="text" ></textarea>
 
-        <button> Submit </button>
+        <button :disabled = disable @click="postqoute()"> Submit </button>
+
+        <p style="grid-column: 1/-1" v-if="submited"> Thank you, we will get back to you soon </p>
+        <p v-if="err"> Couldn't submit the qoute </p>
 
 
     </div>
 </template>
 
 <script>
+import axios from "axios"
     export default {
         name:"qoute-section",
         data() {
             return {
                 name:"",
                 email: "",
-                text:""
+                text:"",
+                submited:false,
+                disable:false,
+                err:false
 
+            }
+        },
+        methods: {
+            postqoute() {
+                this.disable = true;
+                axios.request({
+                    url: "http://127.0.0.1:5000/api/qoute",
+                    method: "POST",
+                    data:{
+                        "email":this.email,
+                        "name":this.name,
+                        "message":this.text
+                    }
+                }).then(()=>{
+                    this.disable=false;
+                    this.submited=true;
+                    this.name="";
+                    this.email="";
+                    this.text="";
+                }).catch(()=>{
+                    this.disable=false;
+                    this.err=true;
+                    
+                })
+                
             }
         },
     }
@@ -42,7 +74,9 @@
     row-gap: 5vh;
     padding-bottom: 5vh;
 }
-
+label{
+    justify-self: end;
+}
 #qoute-header{
     grid-column: 1/-1;
     border-bottom: 2px solid;
@@ -58,13 +92,19 @@ input{
 button{
     font-size: 1.5em;
     grid-column: 1/-1;
-    border: none;
+    border: 2px solid;
     color: white;
     background: #fca311;
-    border-radius: 15px;
     padding: 15px;
+    transition: all ease-in 0.5s;
 }
 
+button:hover{
+    
+    color: #fca311;
+    background:white;
+    padding: 15px;
+}
 label{
     font-size: 1.5em;
 }

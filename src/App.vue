@@ -24,6 +24,7 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
 @import url("https://use.fontawesome.com/releases/v5.15.0/css/all.css");
 @import url("https://use.fontawesome.com/releases/v5.15.0/css/v4-shims.css");
 #app {
@@ -46,6 +47,10 @@ body{
     display: grid;
     grid-template-columns: 1fr 3fr;
 
+}
+
+button{
+  cursor: pointer;
 }
 
 .hidden{
