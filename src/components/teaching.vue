@@ -8,16 +8,30 @@
 
         </div>
         <div id="teaching-image">
-            <img src="https://cdn1.iconfinder.com/data/icons/online-business-34/512/tutor-remote-teacher-computer-online-512.png" alt="">
+            <img src="https://cdn1.iconfinder.com/data/icons/online-business-34/512/tutor-remote-teacher-computer-online-512.png" width="85%" alt="">
         </div>
+        <h3 @click="reviews =!reviews" v-if="!reviews" style="cursor : pointer; grid-column:1/-1; "> View reviews
+        <img src="https://www.computaris.com/wp-content/uploads/2017/01/arrow.jpg" width="50px" alt="">
+         </h3>
+        <h3 @click="reviews =!reviews " v-if="reviews" style="cursor : pointer; grid-column:1/-1;"> Hide reviews </h3>
+        <reviewsPage v-if="reviews"/>
 
 
     </div>
 </template>
 
 <script>
+import reviewsPage from "./reviews"
     export default {
-        name:"teaching-section"
+        name:"teaching-section",
+        components: {
+            reviewsPage,
+        },
+        data() {
+            return {
+                reviews: false
+            }
+        },
     }
 </script>
 

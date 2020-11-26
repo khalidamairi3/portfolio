@@ -15,9 +15,9 @@
                     <img src="../assets/khaled.jpeg" alt="">
                 </div>
         </div>
-        <projectsPage data-aos="fade-down" data-aos-duration ="100"/>
+        <projectsPage data-aos="fade-down" data-aos-duration ="500"/>
         <skillSet data-aos="fade-down" data-aos-duration="1000" />
-         <teachingSection data-aos="zoom-in-right" data-aos-duration="1000"/>
+        <teachingSection data-aos="zoom-in-right" data-aos-duration="1000"/>
         <qouteSection />
         <contacPage />
         
