@@ -36,7 +36,7 @@ import axios from "axios"
             postqoute() {
                 this.disable = true;
                 axios.request({
-                    url: "http://127.0.0.1:5000/api/qoute",
+                    url: "https://khaledamayri.com/api/qoute",
                     method: "POST",
                     data:{
                         "email":this.email,

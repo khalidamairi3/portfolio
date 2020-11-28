@@ -3,7 +3,7 @@
         <h1 id="teaching-header"> Tutoring </h1>
         <div id="teaching-content">
             <p> 
-                Teaching is one of my favorite hobbies. I enjoy the value i can add to students to learn new skills and get their work done. This hobby took a professional move after I was selected to be a Student Assistant in programming courses during my studies in the university. Being a student and an assistant at the same time gave me the ability to tackle students' points of weakness because as a student i am familiar with the difficulties they might have. Currently, I'm leading weekly study sessions for other developers peers where I offer more practice problems and group debugging for those who need it.          
+                 Teaching is one of my passions; since I believe that it demonstrates the highest form of understanding, and it creates a positive bond of communication.  I appreciate the value I can add to students as much as the knowledge I, myself, gain by teaching. What started as a passion took a professional leap when I was selected to be a Student Assistant in programming courses during my studies at the university. Studying and teaching simultaneously allowed me to fully understand what might a student be struggling with, and made my help most significant. Currently, I'm leading weekly study sessions for other developers where I offer practice problems and group-debugging.          
             </p>
 
         </div>

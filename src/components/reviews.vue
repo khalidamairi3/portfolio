@@ -1,8 +1,8 @@
 <template>
     <div id="reviews">
-        <h6 v-if="revs.length == 0"> There is no reviews to see</h6>
+        <h5 style="grid-column: 1/-1" v-if="revs.length == 0"> There is no reviews to see</h5>
         <reviewItem v-for="rev in revs" :key="rev.id" :review = rev />
-        <reviewForm />
+        <reviewForm @addReview="addrev" />
 
     </div>
 </template>
@@ -20,15 +20,22 @@ import axios from "axios";
         },
         mounted () {
             axios.request({
-                url:"http://127.0.0.1:5000/api/reviews",
+                url:"https://khaledamayri.com/api/reviews",
                 method:"GET"
             }).then((response)=>{
-                this.revs=response.data;
+                this.revs=response.data.reverse();
             }).catch(()=>{});
+
         },
         data() {
             return {
                 revs:[]
+            }
+        },
+        methods: {
+            addrev:function(data) {
+                console.log(data);
+                this.revs.unshift(data);
             }
         },
     }

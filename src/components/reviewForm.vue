@@ -12,7 +12,7 @@
     <ul  class="rating">
     <li @click="reviewCheck(1)" class="star rating-item" data-rate="1"></li>
     <li @click="reviewCheck(2)" class="star rating-item" data-rate="2"></li>
-    <li @click="reviewCheck(3)" class="star rating-item" data-rate="3"></li>
+    <li @click="reviewCheck(3)" class="star rating-item active" data-rate="3"></li>
     <li @click="reviewCheck(4)" class="star rating-item" data-rate="4"></li>
     <li @click="reviewCheck(5)" class="star rating-item" data-rate="5"></li>
     </ul>
@@ -26,7 +26,6 @@ import axios from "axios";
         name:"review-form",
         data() {
             return {
-                actives: [false,false,true,false,false],
                 rate : 3,
                 name:"",
                 email:"",
@@ -50,7 +49,7 @@ import axios from "axios";
             },
             postReview(){
                 axios.request({
-                    url:"http://127.0.0.1:5000/api/reviews",
+                    url:"https://khaledamayri.com/api/reviews",
                     method:"POST",
                     data:{
                         "name":this.name,
@@ -59,7 +58,17 @@ import axios from "axios";
                         "rate":this.rate
                     }
 
-                }).then(()=>{}).catch(()=>{})
+                }).then(()=>{ 
+                    let data={
+                        "id":100,
+                        "name":this.name,
+                        "email":this.email,
+                        "message":this.text,
+                        "rate":this.rate
+                    }
+                    console.log(data);
+                    this.$emit("addReview",data)
+                }).catch(()=>{})
 
             }
         },
