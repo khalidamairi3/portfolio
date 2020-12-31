@@ -17,6 +17,21 @@ import projectItem from "./project";
             return {
                 projects: [ 
                     { 
+                    "title" : "KhaledClasses front-end" ,
+                    "description" : "Classes system that provide a modern education system where instructors can view their courses and students, add tasks, view tasks' submissions and grade them. Students can view their courses and tasks in order to submit their solution. All users and courses are managed by admin user",
+                    "code":"https://github.com/khalidamairi3/MVP_frontend.git",
+                    "link" :"https://khaledclasses.ml/#/",
+                    "image": "/img/logo.80f274c0.png" 
+                    },
+
+                    { 
+                    "title" : "KhaledClasses back-end" ,
+                    "description" : "API impelementation for khaledClasses project that talks with SQL database and serve more than 20 functionalities",
+                    "code":"https://github.com/khalidamairi3/MVP_backend.git",
+                    "link" : false,
+                    "image": "https://www.danielleskosky.com/wp-content/uploads/media-uploads/what-is-an-api/xapi-with-outlets.jpg.pagespeed.ic.O5eAY5eU_M.webp"  
+                    },
+                    { 
                     "title" : "Tweeter front-end" ,
                     "description" : "CRUD responsive tweeter website project implemented using Vue.js communicating with API and hosted on google cloud",
                     "code":"https://github.com/khalidamairi3/vueTweeter.git",
@@ -29,7 +44,7 @@ import projectItem from "./project";
                     "description" : "API impelementation for tweeter project that talks with SQL database and serve more than 20 functionalities",
                     "code":"https://github.com/khalidamairi3/tweeter_backend.git",
                     "link" : false,
-                    "image": "https://i.stack.imgur.com/sHDyf.png"  
+                    "image": "https://www.danielleskosky.com/wp-content/uploads/media-uploads/what-is-an-api/xapi-with-outlets.jpg.pagespeed.ic.O5eAY5eU_M.webp"  
                     },
 
                     { 
@@ -59,7 +74,8 @@ import projectItem from "./project";
 <style scoped>
 
 #projects{   
-
+    width: 90%;
+    column-gap: 3vw;
     padding-top: 5vh;
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));

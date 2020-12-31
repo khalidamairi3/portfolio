@@ -7,7 +7,7 @@
     <input type="text" v-model="email">
     <label for="review"> Review: </label>
     <textarea v-model="text" ></textarea>
-    <label> Rate: </label>
+    <label style="align-self:center"> Rate: </label>
 
     <ul  class="rating">
     <li @click="reviewCheck(1)" class="star rating-item" data-rate="1"></li>
@@ -58,16 +58,8 @@ import axios from "axios";
                         "rate":this.rate
                     }
 
-                }).then(()=>{ 
-                    let data={
-                        "id":100,
-                        "name":this.name,
-                        "email":this.email,
-                        "message":this.text,
-                        "rate":this.rate
-                    }
-                    console.log(data);
-                    this.$emit("addReview",data)
+                }).then((response)=>{ 
+                    this.$emit("addReview",response.data)
                 }).catch(()=>{})
 
             }

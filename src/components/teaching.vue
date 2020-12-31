@@ -3,7 +3,7 @@
         <h1 id="teaching-header"> Tutoring </h1>
         <div id="teaching-content">
             <p> 
-                 Teaching is one of my passions; since I believe that it demonstrates the highest form of understanding, and it creates a positive bond of communication.  I appreciate the value I can add to students as much as the knowledge I, myself, gain by teaching. What started as a passion took a professional leap when I was selected to be a Student Assistant in programming courses during my studies at the university. Studying and teaching simultaneously allowed me to fully understand what might a student be struggling with, and made my help most significant. Currently, I'm leading weekly study sessions for other developers where I offer practice problems and group-debugging.          
+                 Teaching is one of my passions! I believe that the ability to teach demonstrates the highest form of understanding and it creates a positive bond of communication. I have always appreciated the value that I can add to students as much as the knowledge I gain by teaching. What started as a passion took a professional leap when I was selected to be a Student Assistant in one of the programming courses at Middle East Technical University. Completing my studies and teaching simultaneously allowed me to fully understand what might a student be struggling with and made my help most significant.  I am also leading weekly study sessions for other developers where I offer practice problems and group-debugging over a virtual platform          
             </p>
 
         </div>
