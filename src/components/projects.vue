@@ -35,7 +35,8 @@ export default {
             "Classes system that provide a modern education system where instructors can view their courses and students, add tasks, view tasks' submissions and grade them. Students can view their courses and tasks in order to submit their solution. All users and courses are managed by admin user",
           code: "https://github.com/khalidamairi3/MVP_frontend.git",
           link: "https://khaledclasses.ml/#/",
-          image: "/img/logo.80f274c0.png",
+          image:
+            "https://www.gethow.org/wp-content/uploads/2014/01/classes.jpg",
         },
 
         {
